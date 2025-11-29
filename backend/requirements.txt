@@ -1,0 +1,48 @@
+# FastAPI & Server
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0
+python-multipart>=0.0.6
+
+# Environment & Configuration
+python-dotenv>=1.0.0
+pydantic>=2.5.0
+
+# LangChain & AI
+langgraph>=0.0.40
+langchain>=0.1.0
+langchain-google-genai>=1.0.0
+google-generativeai>=0.3.0
+
+# Search & Evidence
+tavily-python>=0.3.0
+
+# Database - Supabase (PostgreSQL)
+supabase>=2.3.0
+asyncpg>=0.29.0
+pgvector>=0.2.4
+
+# Database - Neo4j Aura (Graph)
+neo4j>=5.15.0
+
+# HTTP Client
+httpx>=0.26.0
+aiohttp>=3.9.0
+
+# Scheduling
+apscheduler>=3.10.0
+
+# RSS Feed Parsing
+feedparser>=6.0.0
+python-dateutil>=2.8.0
+
+# Embeddings & ML
+sentence-transformers>=2.2.0
+numpy>=1.24.0
+
+# Utilities
+tenacity>=8.2.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+httpx>=0.26.0

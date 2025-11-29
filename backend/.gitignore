@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables
+.env
+.env.local
+
+# IDE Settings
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
+
+# Debug Scripts
+debug_*.py
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+
+android
+android/
+ios/
+build/
+node_modules/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.development
+.env.test
+.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+
+.vscode/
