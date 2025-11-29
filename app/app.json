@@ -1,0 +1,84 @@
+{
+  "expo": {
+    "name": "CheckMate",
+    "slug": "checkmate-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "sdkVersion": "54.0.0",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.checkmate.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "CheckMate needs microphone access for voice commands and audio verification.",
+        "NSSpeechRecognitionUsageDescription": "CheckMate uses speech recognition to enable voice commands for hands-free operation.",
+        "NSCameraUsageDescription": "CheckMate needs camera access to scan and verify images and videos.",
+        "NSPhotoLibraryUsageDescription": "CheckMate needs photo library access to verify images for deepfakes and misinformation.",
+        "UIBackgroundModes": [
+          "remote-notification",
+          "audio"
+        ]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.checkmate.app",
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "POST_NOTIFICATIONS",
+        "INTERNET",
+        "ACCESS_NETWORK_STATE",
+        "FOREGROUND_SERVICE",
+        "MODIFY_AUDIO_SETTINGS"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-dev-client",
+      "./plugins/withAndroidXFix.js",
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/checkmate-logo.png",
+          "color": "#1A1A1A"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow CheckMate to access your camera."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "CheckMate needs access to your photos."
+        }
+      ]
+    ],
+    "scheme": "checkmate",
+    "extra": {
+      "eas": {
+        "projectId": "294ee0e1-8963-4e85-8730-840c1136a734"
+      }
+    },
+    "owner": "abhi2k4"
+  }
+}

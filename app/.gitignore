@@ -1,0 +1,63 @@
+# mobile-app/.gitignore - React Native & Expo
+
+# Node
+/node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+
+# Build outputs
+/web-build/
+dist/
+
+# iOS
+/ios/build/
+/ios/DerivedData/
+/ios/Pods/
+**/Pods/
+# Keep Podfile.lock if you prefer committing it
+
+# Android
+/android/.gradle/
+/android/app/build/
+/android/.cxx/
+/local.properties
+
+# Misc
+*.log
+npm-debug.log*
+*.keystore
+*.env
+.env.*
+
+# Logs
+logs
+coverage/
+coverage-final.json
+
+# Metro
+.expo/logs/
+
+# Editor
+.vscode/
+.idea/
+.DS_Store
+
+# TypeScript
+*.tsbuildinfo
+
+# Temporary
+tmp/
+.temp/
+
+# Ignore these if you use them for local testing
+.expo/web/  
+
+# End of mobile-app .gitignore
+android/
+ios/
+node_modules/
+.expo/
+build/
+dist/
